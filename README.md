@@ -1,59 +1,91 @@
 # AngularTechTest
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+Este proyecto se generó utilizando [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
 
-## Development server
+## Requisitos previos
 
-To start a local development server, run:
+Antes de ejecutar este proyecto, asegúrate de tener instalado lo siguiente:
 
-```bash
+1. Node.js: Descargue e instale la última versión estable de Node.js desde https://nodejs.org/. Asegúrese de que (Node Package Manager) viene incluido con Node.js.
+
+Verifica la instalación:
+
+node -v
+npm -v
+
+2. Angular CLI: Instala el Angular CLI globalmente en tu máquina:
+
+npm install -g @angular/cli
+
+Verifica la instalación:
+
+ng version
+
+3. Git: Asegúrese de que Git está instalado en su sistema. Descárguelo de https://git-scm.com/.
+
+## Clonar el repositorio
+
+Para clonar este repositorio de proyectos, utilice el siguiente comando:
+
+git clone https://github.com/alexanderbaes/angular-tech-test.git
+
+## Instalación de dependencias
+
+Después de clonar el proyecto, vaya al directorio del proyecto e instale las dependencias necesarias utilizando :
+
+cd AngularTechTest
+npm install
+
+Este comando descargará e instalará todos los paquetes listados en el archivo en el directorio
+
+## Ejecutar el servidor de desarrollo
+
+Para iniciar un servidor de desarrollo local, ejecute
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Una vez que el servidor esté funcionando, abra su navegador y navegue hasta `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
-## Code scaffolding
+## Andamiaje de códigos
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular CLI incluye potentes herramientas de andamiaje de código. Para generar un nuevo componente, ejecute
 
-```bash
-ng generate component component-name
-```
+ng generate nombre-componente
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para obtener una lista completa de los esquemas disponibles (como `components`, `directives`, o `pipes`), ejecuta:
 
-```bash
 ng generate --help
-```
 
-## Building
+## Construir el proyecto
 
-To build the project run:
+Para construir el proyecto ejecute:
 
-```bash
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Esto compilará tu proyecto y almacenará los artefactos de compilación en el directorio `dist/`. Por defecto, la compilación de producción optimiza el rendimiento y la velocidad de tu aplicación.
 
-## Running unit tests
+## Ejecución de pruebas unitarias
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para ejecutar pruebas unitarias con el ejecutor de pruebas [Karma](https://karma-runner.github.io), utilice el siguiente comando:
 
-```bash
 ng test
-```
 
-## Running end-to-end tests
+## Ejecución de pruebas de extremo a extremo
 
-For end-to-end (e2e) testing, run:
+Para las pruebas de extremo a extremo (e2e), ejecute:
 
-```bash
 ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Angular CLI no viene con un marco de pruebas de extremo a extremo por defecto. Usted puede elegir uno que se adapte a sus necesidades.
 
-## Additional Resources
+## Limpieza de la caché del proyecto (opcional)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Si encuentras errores de dependencias o módulos, puedes limpiar y restablecer la caché de npm:
+
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+
+## Recursos adicionales
+
+Para obtener más información sobre el uso de la CLI de Angular, incluyendo referencias detalladas de comandos, visite la página [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
